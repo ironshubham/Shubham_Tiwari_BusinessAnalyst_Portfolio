@@ -1,0 +1,1054 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shubham Tiwari — Senior Business Analyst | SaaS, CRM &amp; E-Commerce</title>
+<meta name="description" content="Shubham Tiwari, Senior Business Analyst with 6 years across SaaS, CRM implementation, and retail/e-commerce. Owns the requirements lifecycle end to end and builds a meaningful share of what he specs — SQL, Postman, n8n, Deluge, Power BI.">
+<meta name="author" content="Shubham Tiwari">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Shubham Tiwari — Senior Business Analyst | SaaS, CRM & E-Commerce">
+<meta property="og:description" content="Six years owning the requirements lifecycle end to end across SaaS, CRM, and e-commerce — and building a meaningful share of what gets specified.">
+<meta property="og:locale" content="en_IN">
+<!-- TO ADD: set og:url and og:image once this page is deployed (e.g. GitHub Pages / Netlify URL) -->
+<meta property="og:url" content="">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Shubham Tiwari — Senior Business Analyst">
+<meta name="twitter:description" content="Requirements Engineering · Agile Delivery · SQL & Power BI | SaaS, CRM & E-Commerce">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg:#FAF7F1;
+    --bg-alt:#F1EAE0;
+    --surface:#FFFFFF;
+    --text:#1B1814;
+    --text-muted:#5C564D;
+    --border:#E4DBCB;
+    --accent:#A8451E;
+    --accent-ink:#7C3115;
+    --accent-tint:#F3E4DA;
+    --focus:#1B1814;
+    --max-w:1160px;
+    --radius:2px;
+    --font-head:"Fraunces", Georgia, serif;
+    --font-body:"Inter", -apple-system, sans-serif;
+
+    /* Type scale — every font-size in this file references one of these.
+       Fixed steps: 12 / 14 / 16 / 18 / 20px. Fluid steps for display sizes. */
+    --fs-xs:   0.75rem;   /* 12px — meta, labels, badges */
+    --fs-sm:   0.875rem;  /* 14px — secondary/supporting text */
+    --fs-base: 1rem;      /* 16px — body copy, buttons */
+    --fs-lg:   1.125rem;  /* 18px — subheads, emphasized text */
+    --fs-xl:   1.25rem;   /* 20px — card titles */
+    --fs-emphasis: clamp(1.125rem, 1.6vw + 0.7rem, 1.375rem); /* hero positioning statement */
+    --fs-stat:     clamp(1.875rem, 1.5vw + 1.5rem, 2.25rem);  /* hero stat numbers */
+    --fs-4xl:      clamp(1.75rem, 2.6vw + 1rem, 2.5rem);      /* section titles */
+    --fs-5xl:      clamp(2.4rem, 5vw + 1rem, 4.2rem);         /* hero name */
+  }
+
+  *,*::before,*::after{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior:auto; }
+    *,*::before,*::after{ animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important; scroll-behavior:auto !important; }
+  }
+
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:var(--font-body);
+    font-size:var(--fs-base);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  img{ max-width:100%; display:block; }
+
+  h1,h2,h3,h4{
+    font-family:var(--font-head);
+    font-weight:600;
+    line-height:1.15;
+    margin:0 0 0.5em;
+    color:var(--text);
+  }
+
+  p{ margin:0 0 1em; }
+  a{ color:var(--accent-ink); }
+  ul{ margin:0; padding:0; list-style:none; }
+
+  :focus-visible{
+    outline:2.5px solid var(--focus);
+    outline-offset:3px;
+  }
+
+  .skip-link{
+    position:absolute;
+    left:-9999px;
+    top:auto;
+    background:var(--text);
+    color:var(--bg);
+    padding:0.85em 1.4em;
+    z-index:1000;
+    font-weight:600;
+    text-decoration:none;
+  }
+  .skip-link:focus{
+    left:1rem;
+    top:1rem;
+  }
+
+  .wrap{
+    max-width:var(--max-w);
+    margin:0 auto;
+    padding:0 1.5rem;
+  }
+  @media (min-width:640px){ .wrap{ padding:0 2.5rem; } }
+
+  .eyebrow{
+    display:block;
+    font-family:var(--font-body);
+    font-size:var(--fs-xs);
+    font-weight:600;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--accent-ink);
+    margin-bottom:0.9rem;
+  }
+
+  .section-title{
+    font-size:var(--fs-4xl);
+    margin-bottom:0.5rem;
+  }
+  .section-lede{
+    color:var(--text-muted);
+    max-width:60ch;
+    font-size:var(--fs-lg);
+    margin-bottom:2.5rem;
+  }
+  .section-head{ margin-bottom:2rem; }
+
+  section{ padding:5rem 0; scroll-margin-top:5.5rem; }
+  section:nth-of-type(even){ background:var(--bg-alt); }
+
+  /* ---------- Buttons ---------- */
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    gap:0.5rem;
+    font-family:var(--font-body);
+    font-weight:600;
+    font-size:var(--fs-base);
+    padding:0.85em 1.6em;
+    text-decoration:none;
+    border-radius:var(--radius);
+    border:1.5px solid var(--text);
+    transition:background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+    cursor:pointer;
+  }
+  .btn-primary{
+    background:var(--accent);
+    border-color:var(--accent);
+    color:#fff;
+  }
+  .btn-primary:hover{ background:var(--accent-ink); border-color:var(--accent-ink); }
+  .btn-ghost{
+    background:transparent;
+    color:var(--text);
+  }
+  .btn-ghost:hover{ background:var(--text); color:var(--bg); }
+
+  /* ---------- Header / Nav ---------- */
+  header.site-header{
+    position:sticky;
+    top:0;
+    z-index:500;
+    background:rgba(250,247,241,0.92);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--border);
+  }
+  .nav-row{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    height:4.25rem;
+  }
+  .brand{
+    font-family:var(--font-head);
+    font-weight:600;
+    font-size:var(--fs-lg);
+    text-decoration:none;
+    color:var(--text);
+    letter-spacing:0.01em;
+  }
+  .nav-toggle{
+    display:none;
+    background:none;
+    border:1.5px solid var(--text);
+    border-radius:var(--radius);
+    padding:0.45em 0.7em;
+    font:inherit;
+    font-weight:600;
+    cursor:pointer;
+    color:var(--text);
+  }
+  nav.primary-nav ul{
+    display:flex;
+    gap:1.6rem;
+  }
+  nav.primary-nav a{
+    text-decoration:none;
+    color:var(--text-muted);
+    font-size:var(--fs-sm);
+    font-weight:500;
+    padding:0.4em 0.1em;
+    border-bottom:2px solid transparent;
+    transition:color 0.15s ease, border-color 0.15s ease;
+  }
+  nav.primary-nav a:hover{ color:var(--text); }
+  nav.primary-nav a[aria-current="true"]{
+    color:var(--text);
+    border-bottom-color:var(--accent);
+    font-weight:600;
+  }
+
+  @media (max-width:860px){
+    .nav-toggle{ display:inline-block; }
+    nav.primary-nav{
+      position:absolute;
+      top:4.25rem; left:0; right:0;
+      background:var(--bg);
+      border-bottom:1px solid var(--border);
+      max-height:0;
+      overflow:hidden;
+      transition:max-height 0.25s ease;
+    }
+    nav.primary-nav.is-open{ max-height:26rem; }
+    nav.primary-nav ul{
+      flex-direction:column;
+      gap:0;
+      padding:0.5rem 1.5rem 1.5rem;
+    }
+    nav.primary-nav a{
+      display:block;
+      padding:0.75em 0;
+      border-bottom:1px solid var(--border);
+    }
+    nav.primary-nav a[aria-current="true"]{ border-bottom-color:var(--border); }
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{ padding-top:6rem; padding-bottom:5rem; background:var(--bg); }
+  .hero h1{
+    font-size:var(--fs-5xl);
+    max-width:16ch;
+  }
+  .hero__title{
+    font-size:var(--fs-lg);
+    color:var(--text-muted);
+    font-weight:500;
+    margin-bottom:1.1rem;
+  }
+  .hero__positioning{
+    font-size:var(--fs-emphasis);
+    max-width:52ch;
+    color:var(--text);
+    margin-bottom:2.2rem;
+  }
+  .hero__actions{
+    display:flex;
+    flex-wrap:wrap;
+    gap:1rem;
+    margin-bottom:3.5rem;
+  }
+  .stat-row{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
+    gap:1px;
+    background:var(--border);
+    border:1px solid var(--border);
+  }
+  .stat-card{
+    background:var(--surface);
+    padding:1.6rem 1.5rem;
+  }
+  .stat-card .num{
+    font-family:var(--font-head);
+    font-size:var(--fs-stat);
+    font-weight:600;
+    color:var(--accent-ink);
+    display:block;
+    margin-bottom:0.35rem;
+  }
+  .stat-card .label{
+    font-size:var(--fs-sm);
+    color:var(--text-muted);
+    line-height:1.45;
+  }
+
+  /* ---------- About ---------- */
+  .about-copy{ max-width:68ch; font-size:var(--fs-lg); }
+  .about-copy p{ margin-bottom:1.1em; }
+
+  /* ---------- Skills ---------- */
+  .skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(280px,1fr));
+    gap:2.25rem 2.5rem;
+  }
+  .skill-group h3{
+    font-size:var(--fs-lg);
+    margin-bottom:0.9rem;
+  }
+  .chip-set{ display:flex; flex-wrap:wrap; gap:0.5rem; }
+  .chip{
+    display:inline-block;
+    font-size:var(--fs-sm);
+    padding:0.42em 0.85em;
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:100px;
+    color:var(--text);
+    line-height:1.3;
+  }
+
+  /* ---------- Case Studies ---------- */
+  .case-card{
+    background:var(--surface);
+    border:1px solid var(--border);
+    margin-bottom:1.1rem;
+    border-radius:var(--radius);
+  }
+  .case-card summary{
+    list-style:none;
+    cursor:pointer;
+    padding:1.5rem 1.75rem;
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
+    gap:1.5rem;
+  }
+  .case-card summary::-webkit-details-marker{ display:none; }
+  .case-card summary .ch-head{ flex:1; }
+  .case-card summary h3{
+    font-size:var(--fs-xl);
+    margin-bottom:0.35rem;
+  }
+  .case-card summary .outcome{
+    color:var(--accent-ink);
+    font-weight:600;
+    font-size:var(--fs-base);
+  }
+  .case-card .chevron{
+    flex-shrink:0;
+    width:1.6rem; height:1.6rem;
+    border:1.5px solid var(--text);
+    border-radius:50%;
+    position:relative;
+    margin-top:0.2rem;
+  }
+  .case-card .chevron::before,
+  .case-card .chevron::after{
+    content:"";
+    position:absolute;
+    background:var(--text);
+    top:50%; left:50%;
+  }
+  .case-card .chevron::before{ width:0.7rem; height:1.5px; transform:translate(-50%,-50%); }
+  .case-card .chevron::after{ width:1.5px; height:0.7rem; transform:translate(-50%,-50%); transition:transform 0.15s ease, opacity 0.15s ease; }
+  .case-card[open] .chevron::after{ opacity:0; }
+
+  .case-card .ch-body{
+    padding:0 1.75rem 1.85rem;
+    border-top:1px solid var(--border);
+    padding-top:1.5rem;
+  }
+  .case-card .ch-body h4{
+    font-size:var(--fs-xs);
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    color:var(--text-muted);
+    font-family:var(--font-body);
+    font-weight:700;
+    margin:1.4em 0 0.5em;
+  }
+  .case-card .ch-body h4:first-child{ margin-top:0; }
+  .case-card .ch-body p{ font-size:var(--fs-base); }
+  .case-card .artefact-list{ display:flex; flex-wrap:wrap; gap:0.5rem; }
+  .case-card .artefact-list li{
+    font-size:var(--fs-xs);
+    background:var(--bg-alt);
+    border:1px solid var(--border);
+    padding:0.3em 0.75em;
+    border-radius:100px;
+  }
+  .todo{
+    background:var(--accent-tint);
+    border-left:3px solid var(--accent);
+    padding:0.75em 1em;
+    font-size:var(--fs-sm);
+    color:var(--accent-ink);
+    margin-top:0.6em;
+  }
+  .todo strong{ font-weight:700; }
+
+  /* ---------- Artefacts grid ---------- */
+  .artefact-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(260px,1fr));
+    gap:1.25rem;
+  }
+  .artefact-tile{
+    background:var(--surface);
+    border:1px solid var(--border);
+    padding:1.5rem;
+  }
+  .artefact-tile h3{ font-size:var(--fs-lg); margin-bottom:0.5rem; }
+  .artefact-tile p{ font-size:var(--fs-sm); color:var(--text-muted); margin-bottom:0.9em; }
+  .artefact-tile .sample-link{
+    display:inline-block;
+    font-size:var(--fs-xs);
+    color:var(--accent-ink);
+    font-weight:600;
+    text-decoration:none;
+    border-bottom:1px dashed var(--accent-ink);
+  }
+
+  /* ---------- Experience timeline ---------- */
+  .timeline{ position:relative; }
+  .tl-company{ margin-bottom:3.5rem; position:relative; padding-left:2rem; border-left:2px solid var(--border); }
+  .tl-company:last-child{ margin-bottom:0; }
+  .tl-company::before{
+    content:"";
+    position:absolute;
+    left:-7px; top:0.3rem;
+    width:12px; height:12px;
+    border-radius:50%;
+    background:var(--accent);
+    border:3px solid var(--bg-alt);
+  }
+  .tl-company .co-name{ font-size:var(--fs-xl); margin-bottom:0.15rem; }
+  .tl-company .co-blurb{ color:var(--text-muted); font-size:var(--fs-sm); max-width:60ch; margin-bottom:1.5rem; }
+  .tl-role{ margin-bottom:2rem; }
+  .tl-role:last-child{ margin-bottom:0; }
+  .tl-role .role-head{
+    display:flex; flex-wrap:wrap; align-items:baseline; gap:0.6rem;
+    margin-bottom:0.75rem;
+  }
+  .tl-role h4{ font-size:var(--fs-lg); margin:0; font-family:var(--font-body); font-weight:700; }
+  .tl-role .role-dates{ font-size:var(--fs-xs); color:var(--text-muted); }
+  .tl-role ul{ display:flex; flex-direction:column; gap:0.55rem; }
+  .tl-role li{
+    font-size:var(--fs-base);
+    padding-left:1.1rem;
+    position:relative;
+  }
+  .tl-role li::before{
+    content:"";
+    position:absolute;
+    left:0; top:0.55em;
+    width:5px; height:5px;
+    background:var(--accent);
+  }
+
+  /* ---------- Education / certs ---------- */
+  .edu-cert-grid{ display:grid; grid-template-columns:1.1fr 1fr; gap:3rem; }
+  @media (max-width:760px){ .edu-cert-grid{ grid-template-columns:1fr; } }
+  .edu-block h3, .cert-block h3{ font-size:var(--fs-lg); margin-bottom:1rem; }
+  .edu-item{ background:var(--surface); border:1px solid var(--border); padding:1.5rem; }
+  .edu-item .degree{ font-weight:700; margin-bottom:0.2em; }
+  .edu-item .school{ color:var(--text-muted); font-size:var(--fs-sm); }
+  .cert-list li{
+    display:flex; justify-content:space-between; gap:1rem;
+    padding:0.7em 0;
+    border-bottom:1px solid var(--border);
+    font-size:var(--fs-sm);
+  }
+  .cert-list li:last-child{ border-bottom:none; }
+  .cert-list .cert-year{ color:var(--text-muted); font-size:var(--fs-xs); white-space:nowrap; }
+  .cert-list .in-progress{
+    color:var(--accent-ink);
+    font-weight:700;
+    font-size:var(--fs-xs);
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+  }
+
+  /* ---------- Contact ---------- */
+  .contact-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(240px,1fr));
+    gap:1.25rem;
+    margin-bottom:2.5rem;
+  }
+  .contact-card{
+    background:var(--surface);
+    border:1px solid var(--border);
+    padding:1.5rem;
+  }
+  .contact-card .label{
+    font-size:var(--fs-xs);
+    text-transform:uppercase;
+    letter-spacing:0.08em;
+    color:var(--text-muted);
+    margin-bottom:0.5rem;
+  }
+  .contact-card a{
+    display:inline-block;
+    font-size:var(--fs-lg);
+    font-weight:600;
+    color:var(--text);
+    text-decoration:none;
+    border-bottom:2px solid var(--accent);
+    overflow-wrap:anywhere;
+    word-break:break-word;
+  }
+  .contact-actions{ display:flex; flex-wrap:wrap; gap:1rem; }
+
+  footer.site-footer{
+    padding:2.5rem 0;
+    border-top:1px solid var(--border);
+    text-align:center;
+    color:var(--text-muted);
+    font-size:var(--fs-xs);
+  }
+
+  /* ---------- Scroll reveal ---------- */
+  .reveal{ opacity:0; transform:translateY(14px); transition:opacity 0.55s ease, transform 0.55s ease; }
+  .reveal.is-visible{ opacity:1; transform:none; }
+
+  /* ---------- Print ---------- */
+  @media print{
+    header.site-header, .hero__actions, .contact-actions, .nav-toggle{ display:none !important; }
+    body{ background:#fff; color:#000; font-size:11pt; }
+    section{ padding:1rem 0; break-inside:avoid; }
+    section:nth-of-type(even){ background:#fff; }
+    .case-card{ break-inside:avoid; border:1px solid #999; }
+    .case-card .ch-body{ display:block !important; }
+    a{ color:#000; text-decoration:underline; }
+    .reveal{ opacity:1 !important; transform:none !important; }
+  }
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="wrap nav-row">
+    <a class="brand" href="#hero">Shubham Tiwari</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav">Menu</button>
+    <nav class="primary-nav" id="primaryNav" aria-label="Primary">
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#case-studies">Case Studies</a></li>
+        <li><a href="#artefacts">Artefacts</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section id="hero" class="hero" aria-label="Introduction">
+    <div class="wrap">
+      <span class="eyebrow">Senior Business Analyst — Requirements to Delivery</span>
+      <h1>Shubham Tiwari</h1>
+      <p class="hero__title">Senior Business Analyst | BRD/FRD/SRS · AS-IS/TO-BE · UAT Sign-off | Agile/Scrum | SQL · Jira · Power BI | SaaS, CRM &amp; E-commerce | 50+ implementations at 95% on-time · quote-to-cash cut 15 days</p>
+      <p class="hero__positioning">I drive project delivery end to end — Business Analysis · Requirements Gathering · Stakeholder Management · Business Process Improvement · Agile Methodologies.</p>
+      <div class="hero__actions">
+        <a class="btn btn-primary" href="./Resume/Shubham_Tiwari_Business_Analyst_6YOE.pdf" download>Download Resume</a>
+        <a class="btn btn-ghost" href="mailto:shubhamtiwari0417@gmail.com">Get in touch</a>
+      </div>
+      <div class="stat-row reveal">
+        <div class="stat-card">
+          <span class="num">50+</span>
+          <span class="label">E-commerce &amp; CRM implementations at 95% on-time delivery, zero budget overruns</span>
+        </div>
+        <div class="stat-card">
+          <span class="num">$120K+</span>
+          <span class="label">At-risk recurring revenue protected — 30% churn reduction via ChurnGuard</span>
+        </div>
+        <div class="stat-card">
+          <span class="num">15 days</span>
+          <span class="label">Cut from quote-to-cash cycle time through an AS-IS/TO-BE redesign</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" aria-label="About">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">About</span>
+        <h2 class="section-title">Closing the gap before a ticket gets written</h2>
+      </div>
+      <div class="about-copy reveal">
+        <p>Most projects don't fail on engineering — they fail on unclear requirements. An undefined process, or stakeholders who leave the same meeting with different understandings of what was agreed. Closing that gap before a single ticket gets written is my job.</p>
+        <p>I'm a Senior Business Analyst with six years across SaaS, CRM implementation, and retail/e-commerce systems. I own the requirements lifecycle end to end: discovery workshops, AS-IS/TO-BE process mapping, BRD/FRD/SRS/FSD, user stories with testable acceptance criteria, RTM traceability, and SIT/UAT through formal sign-off.</p>
+        <p>I also build a meaningful share of what I spec — production automations in n8n and Deluge, SQL validation, Power BI reporting, REST APIs tested in Postman. It makes my documentation more buildable, and means I can verify an integration instead of waiting to be told it works.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" aria-label="Core skills and tools">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Core Skills &amp; Tools</span>
+        <h2 class="section-title">What I bring to a requirements table</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-group reveal">
+          <h3>Requirements Engineering</h3>
+          <div class="chip-set">
+            <span class="chip">BRD</span><span class="chip">FRD</span><span class="chip">SRS</span><span class="chip">FSD</span>
+            <span class="chip">RTM traceability</span><span class="chip">User stories &amp; acceptance criteria</span>
+            <span class="chip">AS-IS/TO-BE process mapping (Visio, BPMN)</span>
+            <span class="chip">Gap, root-cause &amp; impact analysis</span>
+            <span class="chip">Wireframing</span><span class="chip">Change request management</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Agile &amp; Delivery Governance</h3>
+          <div class="chip-set">
+            <span class="chip">Scrum (Scrum Master)</span><span class="chip">Sprint planning</span>
+            <span class="chip">Backlog refinement</span><span class="chip">Ceremonies &amp; retrospectives</span>
+            <span class="chip">Hybrid Agile-Waterfall SDLC</span><span class="chip">Effort estimation</span>
+            <span class="chip">RAID / risk tracking</span><span class="chip">Status reporting</span>
+            <span class="chip">Stakeholder communication</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Quality &amp; Testing</h3>
+          <div class="chip-set">
+            <span class="chip">Test scenario &amp; case review</span><span class="chip">SIT/UAT planning &amp; sign-off</span>
+            <span class="chip">Defect triage</span><span class="chip">Post-launch hypercare</span>
+            <span class="chip">RTM coverage validation</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Data &amp; Reporting</h3>
+          <div class="chip-set">
+            <span class="chip">SQL </span>
+            <span class="chip">Power BI</span><span class="chip">Zoho Analytics</span>
+            <span class="chip">Looker Studio</span><span class="chip"> Google Sheets</span>
+            <span class="chip">KPI &amp; SLA definition</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Technology &amp; Platforms</h3>
+          <div class="chip-set">
+            <span class="chip">REST API spec &amp; testing (Postman)</span><span class="chip">n8n</span><span class="chip">Deluge</span>
+            <span class="chip">Zoho CRM Plus</span><span class="chip">Freshworks CRM</span><span class="chip">Adobe Commerce / Magento</span>
+            <span class="chip">Shopify</span><span class="chip">Amazon</span><span class="chip">Walmart</span>
+            <span class="chip">eBay</span><span class="chip">Etsy</span><span class="chip">TikTok Shop</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Tools</h3>
+          <div class="chip-set">
+            <span class="chip">Jira</span><span class="chip">Confluence</span><span class="chip">Microsoft Visio</span>
+            <span class="chip">Lucidchart</span><span class="chip">MS Office Suite</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASE STUDIES -->
+  <section id="case-studies" aria-label="Featured case studies">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Featured Case Studies</span>
+        <h2 class="section-title">Five engagements, in depth</h2>
+        <p class="section-lede">Click a card to expand the full case study — context, my role, approach, artefacts, and the measured outcome.</p>
+      </div>
+
+      <!-- Case Study 1 -->
+      <details class="case-card reveal">
+        <summary>
+          <div class="ch-head">
+            <h3>Multichannel Order &amp; Inventory Sync — Near Real-Time Integration</h3>
+            <span class="outcome">Near real-time sync accuracy · defect/failure rate under 2%</span>
+          </div>
+          <span class="chevron" aria-hidden="true"></span>
+        </summary>
+        <div class="ch-body">
+          <h4>Context</h4>
+          <p>This was an e-commerce marketplace integration project. The client was already selling on Amazon and wanted to expand onto TikTok Shop as a second marketplace — extending the same catalogue, order, and inventory operations across both channels without duplicating product setup effort or letting the two systems drift out of sync.</p>
+          <h4>My Role</h4>
+          <p>I owned the requirements for the multichannel sync solution end to end: defining the catalogue/SKU mapping rules across Amazon and TikTok Shop, specifying the order-and-inventory sync logic, and setting the validation criteria used to certify accuracy before go-live.</p>
+          <h4>Approach</h4>
+          <p>I mapped how catalogue and SKU data differed structurally between the two marketplaces — Amazon models product variations through a parent-child structure (one parent listing with child SKUs for attributes like size or colour), while TikTok Shop has no parent-child concept and treats every variation as its own standalone product. I defined a mapping standard that reconciled the two data models, then specified the order-and-inventory sync logic needed to move updates from batch to near real-time. I set defect and failure-rate thresholds up front and validated a test-store setup against them through SIT/UAT until the solution held consistently under a 2% failure rate.</p>
+          <h4>Artefacts Produced</h4>
+          <ul class="artefact-list">
+            <li>BRD</li>
+            <li>FRD</li>
+            <li>Catalogue/SKU mapping specification (parent-child vs. standalone)</li>
+            <li>Test-store setup wireframe</li>
+          </ul>
+          <h4>Outcome</h4>
+          <p>Brought order and SKU processing to near real-time sync accuracy across Amazon and TikTok Shop, with defect and failure rates held under 2%.</p>
+        </div>
+      </details>
+
+      <!-- Case Study 2 -->
+      <details class="case-card reveal">
+        <summary>
+          <div class="ch-head">
+            <h3>ChurnGuard — AI Churn-Risk Detection Agent</h3>
+            <span class="outcome">Churn down ~30% · $120K+ in at-risk recurring revenue protected</span>
+          </div>
+          <span class="chevron" aria-hidden="true"></span>
+        </summary>
+        <div class="ch-body">
+          <h4>Context</h4>
+          <p>At Threecolts, a SaaS holding company for e-commerce seller tools, customer success had no systematic way to flag accounts at risk of churning before it was too late — intervention was reactive rather than predictive. The business needed a way to score accounts for churn risk before revenue was already lost.</p>
+          <h4>My Role</h4>
+          <p>I owned the requirements for ChurnGuard, an AI-powered churn-risk detection agent, end to end: running discovery with customer success and engineering, defining the scoring logic, and validating the model's inputs before a line of code was written.</p>
+          <h4>Approach</h4>
+          <p>I ran discovery workshops with customer success and engineering to identify which behavioural signals actually predicted churn, then defined a five-signal scoring model from that input. Before development began, I validated every risk signal by hand against CRM and product-usage data in SQL — treating the data as untrustworthy until proven otherwise, rather than handing engineering a spec and waiting to find out if it worked.</p>
+          <h4>Artefacts Produced</h4>
+          <ul class="artefact-list">
+            <li>Requirements &amp; scoring-logic documentation</li>
+            <li>SQL validation queries</li>
+          </ul>
+          <h4>Outcome</h4>
+          <p>Customer churn reduced by approximately 30%, protecting more than $120K in at-risk recurring revenue.</p>
+        </div>
+      </details>
+
+      <!-- Case Study 3 -->
+      <details class="case-card reveal">
+        <summary>
+          <div class="ch-head">
+            <h3>E-commerce Implementation Delivery Program — 50+ Projects</h3>
+            <span class="outcome">50+ projects delivered · 95% on-time · zero budget overruns</span>
+          </div>
+          <span class="chevron" aria-hidden="true"></span>
+        </summary>
+        <div class="ch-body">
+          <h4>Context</h4>
+          <p>At CEDCOSS Technologies (CedCommerce), client e-commerce implementations ran continuously across a high volume of concurrent engagements, each with its own scope, workflow requirements, and go-live timeline.</p>
+          <h4>My Role</h4>
+          <p>I owned scope, workflow discovery, and go-live sequencing across more than 50 e-commerce implementation projects, holding delivery to a 95% on-time rate with zero budget overruns.</p>
+          <h4>Approach</h4>
+          <p>I controlled scope and risk early on each engagement, validated every build through SIT/UAT, and triaged defects before go-live — producing the complete requirements artefact set (AS-IS/TO-BE process maps, wireframes, data-flow diagrams, and BRD/FRD/FSD) on every engagement so development teams could build without rework.</p>
+          <h4>Artefacts Produced</h4>
+          <ul class="artefact-list">
+            <li>AS-IS/TO-BE process maps</li>
+            <li>Wireframes &amp; data-flow diagrams</li>
+            <li>BRD/FRD/FSD</li>
+          </ul>
+          <h4>Outcome</h4>
+          <p>Delivered 50+ e-commerce implementation projects at 95% on-time delivery with zero budget overruns, holding project cost 5% below budget across engagements.</p>
+        </div>
+      </details>
+
+      <!-- Case Study 4 -->
+      <details class="case-card reveal">
+        <summary>
+          <div class="ch-head">
+            <h3>Quote-to-Cash Process Redesign</h3>
+            <span class="outcome">Cycle time cut by 15 days</span>
+          </div>
+          <span class="chevron" aria-hidden="true"></span>
+        </summary>
+        <div class="ch-body">
+          <h4>Context</h4>
+          <p>At CEDCOSS Technologies (CedCommerce), the quote-to-cash process — from initial quote through pipeline, pricing, and approval — had accumulated enough friction to meaningfully slow revenue recognition, with approval gates and pricing logic that had grown unwieldy over time.</p>
+          <h4>My Role</h4>
+          <p>I owned the end-to-end AS-IS/TO-BE redesign of the process: rationalising approval gates and rebuilding the CRM's pipeline, quotation, and pricing logic.</p>
+          <h4>Approach</h4>
+          <p>I mapped the AS-IS quote-to-cash process to identify where time was actually being lost, then designed a TO-BE process that rationalised the approval gates and rebuilt the underlying pipeline, quotation, and pricing logic in the CRM.</p>
+          <h4>Artefacts Produced</h4>
+          <ul class="artefact-list">
+            <li>AS-IS/TO-BE process maps</li>
+          </ul>
+          <h4>Outcome</h4>
+          <p>Quote-to-cash cycle time was cut by 15 days.</p>
+        </div>
+      </details>
+
+      <!-- Case Study 5 -->
+      <details class="case-card reveal">
+        <summary>
+          <div class="ch-head">
+            <h3>Enterprise Marketplace Integrations — 5 Platforms</h3>
+            <span class="outcome">100% RTM traceability from requirement to client sign-off</span>
+          </div>
+          <span class="chevron" aria-hidden="true"></span>
+        </summary>
+        <div class="ch-body">
+          <h4>Context</h4>
+          <p>CEDCOSS is an e-commerce technology and marketplace-integration company. Enterprise clients needed their catalogues, orders, and inventory integrated across five major marketplaces — Amazon, Walmart, eBay, Etsy, and Shopify — each with its own data model and constraints.</p>
+          <h4>My Role</h4>
+          <p>I led requirements across these integrations: authoring BRD, FRD, and SRS documentation and maintaining full RTM traceability from business requirement through test case to client sign-off.</p>
+          <h4>Approach</h4>
+          <p>I ran discovery per engagement to capture each client's catalogue, order, and inventory requirements, then documented them as formal BRD/FRD/SRS artefacts and traced every requirement through to a test case and a client sign-off in the RTM.</p>
+          <h4>Artefacts Produced</h4>
+          <ul class="artefact-list">
+            <li>BRD</li><li>FRD</li><li>SRS</li><li>RTM (Requirements Traceability Matrix)</li>
+          </ul>
+          <h4>Outcome</h4>
+          <p>Maintained 100% RTM traceability from business requirement through test case to client sign-off across all five marketplace integrations.</p>
+        </div>
+      </details>
+
+    </div>
+  </section>
+
+  <!-- DOCUMENTATION & ARTEFACTS -->
+  <section id="artefacts" aria-label="Documentation and artefacts">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Documentation &amp; Artefacts</span>
+        <h2 class="section-title">What I produce, and when I use it</h2>
+      </div>
+      <div class="artefact-grid">
+        <div class="artefact-tile reveal">
+          <h3>BRD — Business Requirements Document</h3>
+          <p>Captures the business problem, objectives, and scope agreed with stakeholders before any solution design starts.</p>
+          <a class="sample-link" href="./Document/01_BRD_ChurnGuard.pdf" target="_blank" rel="noopener noreferrer">View sample →</a>
+        </div>
+        <div class="artefact-tile reveal">
+          <h3>FRD — Functional Requirements Document</h3>
+          <p>Translates business requirements into system behaviour — detailed enough for engineering to build from directly.</p>
+          <a class="sample-link" href="./Document/02_FRD_ChurnGuard.pdf" target="_blank" rel="noopener noreferrer">View sample →</a>
+        </div>
+        <div class="artefact-tile reveal">
+          <h3>SRS — Software Requirements Specification</h3>
+          <p>Formal specification of functional and non-functional requirements, used with technical stakeholders and vendors.</p>
+          <a class="sample-link" href="./Document/03_SRS_ChurnGuard.pdf" target="_blank" rel="noopener noreferrer">View sample →</a>
+        </div>
+        <div class="artefact-tile reveal">
+          <h3>FSD — Functional Specification Document</h3>
+          <p>Field- and workflow-level detail bridging the FRD and the build — used heavily on CRM/platform configuration work.</p>
+          <a class="sample-link" href="./Document/04_FSD_ChurnGuard.pdf" target="_blank" rel="noopener noreferrer">View sample →</a>
+        </div>
+        <div class="artefact-tile reveal">
+          <h3>RTM — Requirements Traceability Matrix</h3>
+          <p>Maps every requirement to its test case and sign-off status — maintained at 100% traceability on marketplace integration engagements.</p>
+          <a class="sample-link" href="./Document/05_RTM_ChurnGuard.xlsx" target="_blank" rel="noopener noreferrer">Download sample →</a>
+        </div>
+        <div class="artefact-tile reveal">
+          <h3>User Stories &amp; Acceptance Criteria</h3>
+          <p>Backlog-ready stories with testable acceptance criteria that development estimates and builds directly from.</p>
+          <a class="sample-link" href="./Document/06_User_Stories_and_Acceptance_Criteria.pdf" target="_blank" rel="noopener noreferrer">View sample →</a>
+        </div>
+        <div class="artefact-tile reveal">
+          <h3>AS-IS/TO-BE Process Maps</h3>
+          <p>Visio/BPMN maps of the current vs. redesigned process — the basis for every workflow redesign I run.</p>
+          <a class="sample-link" href="./Document/07_AS_IS_Process_Map.png" target="_blank" rel="noopener noreferrer">View AS-IS →</a>
+          <a class="sample-link" href="./Document/08_TO_BE_Process_Map.png" target="_blank" rel="noopener noreferrer">View TO-BE →</a>
+        </div>
+        <div class="artefact-tile reveal">
+          <h3>Wireframes</h3>
+          <p>Low-fidelity screen and flow mockups used to align stakeholders before development starts.</p>
+          <a class="sample-link" href="./Document/09_Wireframes_ChurnGuard.pdf" target="_blank" rel="noopener noreferrer">View sample →</a>
+        </div>
+        <div class="artefact-tile reveal">
+          <h3>Data-Flow Diagrams</h3>
+          <p>Map how data moves across systems on integration-heavy engagements — marketplaces, CRM, and billing systems.</p>
+          <a class="sample-link" href="./Document/10_DFD_Level_0_Context.png" target="_blank" rel="noopener noreferrer">View Level 0 →</a>
+          <a class="sample-link" href="./Document/11_DFD_Level_1.png" target="_blank" rel="noopener noreferrer">View Level 1 →</a>
+        </div>
+        <div class="artefact-tile reveal">
+          <h3>UAT Plans &amp; Sign-off Packs</h3>
+          <p>Test scenarios, execution tracking, and formal sign-off documentation, carried through post-launch hypercare.</p>
+          <a class="sample-link" href="./Document/12_UAT_Plan_and_Signoff_Pack.pdf" target="_blank" rel="noopener noreferrer">View sample →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" aria-label="Professional experience">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Experience</span>
+        <h2 class="section-title">Where this was built</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="tl-company reveal">
+          <h3 class="co-name">Threecolts</h3>
+          <p class="co-blurb">SaaS holding company for e-commerce seller tools; acquired CEDCOSS Technologies in September 2024. Lucknow, India.</p>
+          <div class="tl-role">
+            <div class="role-head">
+              <h4>Senior Business Analyst</h4>
+              <span class="role-dates">September 2024 – Present</span>
+            </div>
+            <ul>
+              <li>Protected $120K+ in at-risk recurring revenue and cut customer churn by 30%, owning the requirements behind a customer-retention risk initiative and validating every signal against live account data before it reached a client-facing decision.</li>
+              <li>Lifted client CSAT by 20% and returned 40 FTE hours per month to the support organisation by defining SLA-compliance grading criteria applied to every customer interaction, sustained through a two-week post-launch hypercare window with zero client-facing defects.</li>
+              <li>Established consistent SLA and revenue coverage across 200 high-value client accounts by designing a CRM account-ownership model spanning 3 teams, adopted as standard operating procedure.</li>
+              <li>Delivered the TikTok Shop marketplace integration on schedule and within scope as Scrum Master, keeping client-facing commitments on track through backlog refinement, sprint planning, and release coordination for a cross-functional squad.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-company reveal">
+          <h3 class="co-name">CEDCOSS Technologies Pvt. Ltd. (CedCommerce)</h3>
+          <p class="co-blurb">E-commerce technology and marketplace-integration company; progressed from delivery coordination into full business analysis ownership. Lucknow, India.</p>
+
+          <div class="tl-role">
+            <div class="role-head">
+              <h4>Business Analyst / Senior Project Coordinator</h4>
+              <span class="role-dates">October 2023 – September 2024</span>
+            </div>
+            <ul>
+              <li>Led requirements for enterprise marketplace integrations across 5 platforms (Amazon, Walmart, eBay, Etsy, Shopify), authoring BRD/FRD/SRS and maintaining 100% RTM traceability through client sign-off.</li>
+              <li>Improved pipeline visibility and conversion tracking for 100+ frontline agents by redesigning the CRM sales workflow — lead scoring, 5–7 stage pipelines, account hierarchies, and dashboards.</li>
+              <li>Cut mid-sprint clarification requests and rework by facilitating discovery workshops across every engagement, converting outcomes into user stories with testable acceptance criteria.</li>
+            </ul>
+          </div>
+
+          <div class="tl-role">
+            <div class="role-head">
+              <h4>Business Analyst / IT Project Coordinator</h4>
+              <span class="role-dates">November 2020 – October 2023</span>
+            </div>
+            <ul>
+              <li>Delivered 50+ e-commerce implementation projects at 95% on-time delivery with zero budget overruns, owning scope, workflow discovery, and go-live sequencing.</li>
+              <li>Cut quote-to-cash cycle time by 15 days through end-to-end AS-IS/TO-BE process redesign, approval-gate rationalisation, and pricing logic restructuring.</li>
+              <li>Held project cost 5% below budget across 50+ engagements through early scope and risk control, SIT/UAT validation, and defect triage.</li>
+              <li>Produced the complete requirements artefact set on every engagement — AS-IS/TO-BE process maps, wireframes, data-flow diagrams, and BRD/FRD/FSD — enabling development teams to build without rework.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" aria-label="Contact">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Contact</span>
+        <h2 class="section-title">Let's talk about your requirements problem</h2>
+        <p class="section-lede">Open to Senior BA, Business Systems Analyst, Technical BA, Product Owner, and CRM Functional Consultant roles — Gurugram/NCR, Noida, Bengaluru, Hyderabad, Pune, Ahmedabad, or remote.</p>
+      </div>
+      <div class="contact-grid reveal">
+        <div class="contact-card">
+          <div class="label">Email</div>
+          <a href="mailto:shubhamtiwari0417@gmail.com">shubhamtiwari0417@gmail.com</a>
+        </div>
+        <div class="contact-card">
+          <div class="label">LinkedIn</div>
+          <a href="https://linkedin.com/in/shubhamtiwari-businessanalyst" target="_blank" rel="noopener noreferrer">linkedin.com/in/shubhamtiwari-businessanalyst</a>
+        </div>
+        <div class="contact-card">
+          <div class="label">Location</div>
+          <span style="font-size:var(--fs-lg); font-weight:600;">Kanpur Nagar, Uttar Pradesh, India</span>
+        </div>
+      </div>
+      <div class="contact-actions reveal">
+        <a class="btn btn-primary" href="./Resume/Shubham_Tiwari_Business_Analyst_6YOE.pdf" download>Download Resume</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>&copy; <span id="year"></span> Shubham Tiwari. Built with plain HTML, CSS &amp; JS.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Mobile nav toggle
+  var navToggle = document.getElementById('navToggle');
+  var primaryNav = document.getElementById('primaryNav');
+  navToggle.addEventListener('click', function(){
+    var isOpen = primaryNav.classList.toggle('is-open');
+    navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+  primaryNav.addEventListener('click', function(e){
+    if (e.target.tagName === 'A' && primaryNav.classList.contains('is-open')){
+      primaryNav.classList.remove('is-open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  // Scroll-spy: highlight active nav link
+  var sections = Array.prototype.slice.call(document.querySelectorAll('main section[id]'));
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll('nav.primary-nav a'));
+  var linkFor = {};
+  navLinks.forEach(function(a){ linkFor[a.getAttribute('href').slice(1)] = a; });
+
+  if ('IntersectionObserver' in window){
+    var spy = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        var id = entry.target.id;
+        var link = linkFor[id];
+        if (!link) return;
+        if (entry.isIntersecting){
+          navLinks.forEach(function(a){ a.removeAttribute('aria-current'); });
+          link.setAttribute('aria-current', 'true');
+        }
+      });
+    }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
+    sections.forEach(function(s){ spy.observe(s); });
+
+    // Scroll reveal
+    var reveal = new IntersectionObserver(function(entries, obs){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting){
+          entry.target.classList.add('is-visible');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(function(el){ reveal.observe(el); });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('is-visible'); });
+  }
+
+  // Only one case study open at a time (optional convenience, not enforced strictly)
+  var cases = document.querySelectorAll('.case-card');
+  cases.forEach(function(card){
+    card.addEventListener('toggle', function(){
+      if (card.open){
+        cases.forEach(function(other){
+          if (other !== card) other.open = false;
+        });
+      }
+    });
+  });
+
+  // Ensure all case studies are expanded when printing, restore after
+  var openBeforePrint = [];
+  window.addEventListener('beforeprint', function(){
+    openBeforePrint = [];
+    cases.forEach(function(c){ openBeforePrint.push(c.open); c.open = true; });
+  });
+  window.addEventListener('afterprint', function(){
+    cases.forEach(function(c, i){ c.open = openBeforePrint[i]; });
+  });
+})();
+</script>
+
+</body>
+</html>
