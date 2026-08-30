@@ -381,8 +381,8 @@
   }
   .case-card .ch-body h4:first-child{ margin-top:0; }
   .case-card .ch-body p{ font-size:var(--fs-base); }
-  .case-card .artefact-list{ display:flex; flex-wrap:wrap; gap:0.5rem; }
-  .case-card .artefact-list li{
+  .case-card .artifact-list{ display:flex; flex-wrap:wrap; gap:0.5rem; }
+  .case-card .artifact-list li{
     font-size:var(--fs-xs);
     background:var(--bg-alt);
     border:1px solid var(--border);
@@ -399,20 +399,20 @@
   }
   .todo strong{ font-weight:700; }
 
-  /* ---------- Artefacts grid ---------- */
-  .artefact-grid{
+  /* ---------- Artifacts grid ---------- */
+  .artifact-grid{
     display:grid;
     grid-template-columns:repeat(auto-fit, minmax(260px,1fr));
     gap:1.25rem;
   }
-  .artefact-tile{
+  .artifact-tile{
     background:var(--surface);
     border:1px solid var(--border);
     padding:1.5rem;
   }
-  .artefact-tile h3{ font-size:var(--fs-lg); margin-bottom:0.5rem; }
-  .artefact-tile p{ font-size:var(--fs-sm); color:var(--text-muted); margin-bottom:0.9em; }
-  .artefact-tile .sample-link{
+  .artifact-tile h3{ font-size:var(--fs-lg); margin-bottom:0.5rem; }
+  .artifact-tile p{ font-size:var(--fs-sm); color:var(--text-muted); margin-bottom:0.9em; }
+  .artifact-tile .sample-link{
     display:inline-block;
     font-size:var(--fs-xs);
     color:var(--accent-ink);
@@ -551,7 +551,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#case-studies">Case Studies</a></li>
-        <li><a href="#artefacts">Artefacts</a></li>
+        <li><a href="#artifacts">Artifacts</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -675,7 +675,7 @@
       <div class="section-head reveal">
         <span class="eyebrow">Featured Case Studies</span>
         <h2 class="section-title">Five engagements, in depth</h2>
-        <p class="section-lede">Click a card to expand the full case study — context, my role, approach, artefacts, and the measured outcome.</p>
+        <p class="section-lede">Click a card to expand the full case study — context, my role, approach, artifacts, and the measured outcome.</p>
       </div>
 
       <!-- Case Study 1 -->
@@ -694,8 +694,8 @@
           <p>I owned the requirements for the multichannel sync solution end to end: defining the catalogue/SKU mapping rules across Amazon and TikTok Shop, specifying the order-and-inventory sync logic, and setting the validation criteria used to certify accuracy before go-live.</p>
           <h4>Approach</h4>
           <p>I mapped how catalogue and SKU data differed structurally between the two marketplaces — Amazon models product variations through a parent-child structure (one parent listing with child SKUs for attributes like size or colour), while TikTok Shop has no parent-child concept and treats every variation as its own standalone product. I defined a mapping standard that reconciled the two data models, then specified the order-and-inventory sync logic needed to move updates from batch to near real-time. I set defect and failure-rate thresholds up front and validated a test-store setup against them through SIT/UAT until the solution held consistently under a 2% failure rate.</p>
-          <h4>Artefacts Produced</h4>
-          <ul class="artefact-list">
+          <h4>Artifacts Produced</h4>
+          <ul class="artifact-list">
             <li>BRD</li>
             <li>FRD</li>
             <li>Catalogue/SKU mapping specification (parent-child vs. standalone)</li>
@@ -722,8 +722,8 @@
           <p>I owned the requirements for ChurnGuard, an AI-powered churn-risk detection agent, end to end: running discovery with customer success and engineering, defining the scoring logic, and validating the model's inputs before a line of code was written.</p>
           <h4>Approach</h4>
           <p>I ran discovery workshops with customer success and engineering to identify which behavioural signals actually predicted churn, then defined a five-signal scoring model from that input. Before development began, I validated every risk signal by hand against CRM and product-usage data in SQL — treating the data as untrustworthy until proven otherwise, rather than handing engineering a spec and waiting to find out if it worked.</p>
-          <h4>Artefacts Produced</h4>
-          <ul class="artefact-list">
+          <h4>Artifacts Produced</h4>
+          <ul class="artifact-list">
             <li>Requirements &amp; scoring-logic documentation</li>
             <li>SQL validation queries</li>
           </ul>
@@ -747,9 +747,9 @@
           <h4>My Role</h4>
           <p>I owned scope, workflow discovery, and go-live sequencing across more than 50 e-commerce implementation projects, holding delivery to a 95% on-time rate with zero budget overruns.</p>
           <h4>Approach</h4>
-          <p>I controlled scope and risk early on each engagement, validated every build through SIT/UAT, and triaged defects before go-live — producing the complete requirements artefact set (AS-IS/TO-BE process maps, wireframes, data-flow diagrams, and BRD/FRD/FSD) on every engagement so development teams could build without rework.</p>
-          <h4>Artefacts Produced</h4>
-          <ul class="artefact-list">
+          <p>I controlled scope and risk early on each engagement, validated every build through SIT/UAT, and triaged defects before go-live — producing the complete requirements artifact set (AS-IS/TO-BE process maps, wireframes, data-flow diagrams, and BRD/FRD/FSD) on every engagement so development teams could build without rework.</p>
+          <h4>Artifacts Produced</h4>
+          <ul class="artifact-list">
             <li>AS-IS/TO-BE process maps</li>
             <li>Wireframes &amp; data-flow diagrams</li>
             <li>BRD/FRD/FSD</li>
@@ -775,8 +775,8 @@
           <p>I owned the end-to-end AS-IS/TO-BE redesign of the process: rationalising approval gates and rebuilding the CRM's pipeline, quotation, and pricing logic.</p>
           <h4>Approach</h4>
           <p>I mapped the AS-IS quote-to-cash process to identify where time was actually being lost, then designed a TO-BE process that rationalised the approval gates and rebuilt the underlying pipeline, quotation, and pricing logic in the CRM.</p>
-          <h4>Artefacts Produced</h4>
-          <ul class="artefact-list">
+          <h4>Artifacts Produced</h4>
+          <ul class="artifact-list">
             <li>AS-IS/TO-BE process maps</li>
           </ul>
           <h4>Outcome</h4>
@@ -799,9 +799,9 @@
           <h4>My Role</h4>
           <p>I led requirements across these integrations: authoring BRD, FRD, and SRS documentation and maintaining full RTM traceability from business requirement through test case to client sign-off.</p>
           <h4>Approach</h4>
-          <p>I ran discovery per engagement to capture each client's catalogue, order, and inventory requirements, then documented them as formal BRD/FRD/SRS artefacts and traced every requirement through to a test case and a client sign-off in the RTM.</p>
-          <h4>Artefacts Produced</h4>
-          <ul class="artefact-list">
+          <p>I ran discovery per engagement to capture each client's catalogue, order, and inventory requirements, then documented them as formal BRD/FRD/SRS artifacts and traced every requirement through to a test case and a client sign-off in the RTM.</p>
+          <h4>Artifacts Produced</h4>
+          <ul class="artifact-list">
             <li>BRD</li><li>FRD</li><li>SRS</li><li>RTM (Requirements Traceability Matrix)</li>
           </ul>
           <h4>Outcome</h4>
@@ -812,62 +812,62 @@
     </div>
   </section>
 
-  <!-- DOCUMENTATION & ARTEFACTS -->
-  <section id="artefacts" aria-label="Documentation and artefacts">
+  <!-- DOCUMENTATION & ARTIFACTS -->
+  <section id="artifacts" aria-label="Documentation and artifacts">
     <div class="wrap">
       <div class="section-head reveal">
-        <span class="eyebrow">Documentation &amp; Artefacts</span>
+        <span class="eyebrow">Documentation &amp; Artifacts</span>
         <h2 class="section-title">What I produce, and when I use it</h2>
       </div>
-      <div class="artefact-grid">
-        <div class="artefact-tile reveal">
+      <div class="artifact-grid">
+        <div class="artifact-tile reveal">
           <h3>BRD — Business Requirements Document</h3>
           <p>Captures the business problem, objectives, and scope agreed with stakeholders before any solution design starts.</p>
           <a class="sample-link" href="./Document/01_BRD_ChurnGuard.pdf" target="_blank" rel="noopener noreferrer">View sample →</a>
         </div>
-        <div class="artefact-tile reveal">
+        <div class="artifact-tile reveal">
           <h3>FRD — Functional Requirements Document</h3>
           <p>Translates business requirements into system behaviour — detailed enough for engineering to build from directly.</p>
           <a class="sample-link" href="./Document/02_FRD_ChurnGuard.pdf" target="_blank" rel="noopener noreferrer">View sample →</a>
         </div>
-        <div class="artefact-tile reveal">
+        <div class="artifact-tile reveal">
           <h3>SRS — Software Requirements Specification</h3>
           <p>Formal specification of functional and non-functional requirements, used with technical stakeholders and vendors.</p>
           <a class="sample-link" href="./Document/03_SRS_ChurnGuard.pdf" target="_blank" rel="noopener noreferrer">View sample →</a>
         </div>
-        <div class="artefact-tile reveal">
+        <div class="artifact-tile reveal">
           <h3>FSD — Functional Specification Document</h3>
           <p>Field- and workflow-level detail bridging the FRD and the build — used heavily on CRM/platform configuration work.</p>
           <a class="sample-link" href="./Document/04_FSD_ChurnGuard.pdf" target="_blank" rel="noopener noreferrer">View sample →</a>
         </div>
-        <div class="artefact-tile reveal">
+        <div class="artifact-tile reveal">
           <h3>RTM — Requirements Traceability Matrix</h3>
           <p>Maps every requirement to its test case and sign-off status — maintained at 100% traceability on marketplace integration engagements.</p>
           <a class="sample-link" href="./Document/05_RTM_ChurnGuard.xlsx" target="_blank" rel="noopener noreferrer">Download sample →</a>
         </div>
-        <div class="artefact-tile reveal">
+        <div class="artifact-tile reveal">
           <h3>User Stories &amp; Acceptance Criteria</h3>
           <p>Backlog-ready stories with testable acceptance criteria that development estimates and builds directly from.</p>
           <a class="sample-link" href="./Document/06_User_Stories_and_Acceptance_Criteria.pdf" target="_blank" rel="noopener noreferrer">View sample →</a>
         </div>
-        <div class="artefact-tile reveal">
+        <div class="artifact-tile reveal">
           <h3>AS-IS/TO-BE Process Maps</h3>
           <p>Visio/BPMN maps of the current vs. redesigned process — the basis for every workflow redesign I run.</p>
           <a class="sample-link" href="./Document/07_AS_IS_Process_Map.png" target="_blank" rel="noopener noreferrer">View AS-IS →</a>
           <a class="sample-link" href="./Document/08_TO_BE_Process_Map.png" target="_blank" rel="noopener noreferrer">View TO-BE →</a>
         </div>
-        <div class="artefact-tile reveal">
+        <div class="artifact-tile reveal">
           <h3>Wireframes</h3>
           <p>Low-fidelity screen and flow mockups used to align stakeholders before development starts.</p>
           <a class="sample-link" href="./Document/09_Wireframes_ChurnGuard.pdf" target="_blank" rel="noopener noreferrer">View sample →</a>
         </div>
-        <div class="artefact-tile reveal">
+        <div class="artifact-tile reveal">
           <h3>Data-Flow Diagrams</h3>
           <p>Map how data moves across systems on integration-heavy engagements — marketplaces, CRM, and billing systems.</p>
           <a class="sample-link" href="./Document/10_DFD_Level_0_Context.png" target="_blank" rel="noopener noreferrer">View Level 0 →</a>
           <a class="sample-link" href="./Document/11_DFD_Level_1.png" target="_blank" rel="noopener noreferrer">View Level 1 →</a>
         </div>
-        <div class="artefact-tile reveal">
+        <div class="artifact-tile reveal">
           <h3>UAT Plans &amp; Sign-off Packs</h3>
           <p>Test scenarios, execution tracking, and formal sign-off documentation, carried through post-launch hypercare.</p>
           <a class="sample-link" href="./Document/12_UAT_Plan_and_Signoff_Pack.pdf" target="_blank" rel="noopener noreferrer">View sample →</a>
@@ -927,7 +927,7 @@
               <li>Delivered 50+ e-commerce implementation projects at 95% on-time delivery with zero budget overruns, owning scope, workflow discovery, and go-live sequencing.</li>
               <li>Cut quote-to-cash cycle time by 15 days through end-to-end AS-IS/TO-BE process redesign, approval-gate rationalisation, and pricing logic restructuring.</li>
               <li>Held project cost 5% below budget across 50+ engagements through early scope and risk control, SIT/UAT validation, and defect triage.</li>
-              <li>Produced the complete requirements artefact set on every engagement — AS-IS/TO-BE process maps, wireframes, data-flow diagrams, and BRD/FRD/FSD — enabling development teams to build without rework.</li>
+              <li>Produced the complete requirements artifact set on every engagement — AS-IS/TO-BE process maps, wireframes, data-flow diagrams, and BRD/FRD/FSD — enabling development teams to build without rework.</li>
             </ul>
           </div>
         </div>
